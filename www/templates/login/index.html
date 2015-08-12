@@ -1,13 +1,13 @@
-<ion-view view-title="Music Timer">
+<ion-view view-title="Login">
   <ion-content class="padding">
-    <form class="login-form" ng-submit="loginController.authenticate()">
+    <form class="login-form" ng-submit="loginController.authenticate(loginData)">
       <div class="list">
 				<label class="item item-image">
 					<img class='logo' src="img/icon.png">
 				</label>
         <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="loginData.email">
         </label>
         <label class="item item-input">
           <span class="input-label">Password</span>
@@ -15,7 +15,7 @@
         </label>
         <label class="item">
           <button class="button button-block button-positive" type="submit">Log in</button>
-          <button class="button button-block button-positive" ng-click="LoginController.authenticateWithFacebook()">
+          <button class="button button-block button-positive" on-tap="loginController.authenticateWithFacebook()">
           	Login with Facebook
           </button>
         </label>

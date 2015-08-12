@@ -1,12 +1,19 @@
 {
-"compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": false,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false
-},
-"filesGlob": [
-    "./**/*.ts"
-]}
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./www/js/**/*.ts"
+    ],
+    "files": [
+        "./www/js/controllers/HomeController.ts",
+        "./www/js/controllers/LoginController.ts",
+        "./www/js/controllers/UsersController.ts",
+        "./www/js/controllers/dashboard/PiecesController.ts"
+    ]
+}

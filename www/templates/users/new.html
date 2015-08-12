@@ -1,0 +1,28 @@
+<ion-view view-title="Sign Up">
+  <ion-content class="padding">
+    <form class="users-form" ng-submit="usersController.create(user)">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="user.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="user.password">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="user.firstName">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Last Name</span>
+          <input type="text" ng-model="user.lastName">
+        </label>
+        <!-- TODO: Photo Location -->
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Create</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
